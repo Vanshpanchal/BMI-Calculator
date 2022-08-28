@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>BMI</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            BMI Calculator
+        </div>
+    </header>
+    <section class="sect1">
+        <div class="box">
+            <div class="banner">
+                <p> body mass index</p>
+
+            </div>
+
+            <div class="values">
+                <label for="">Enter Your Height</label>
+                <input type="text" name="" id="cm" class="val" placeholder="Height(CM)">
+            </div>
+
+            <div class="values">
+                <label for="">Enter Your Weight</label>
+                <input type="text" name="" id="kg" class="val" placeholder="Weight(KG)">
+            </div>
+            <button onclick="BMI()" id="calc">Calculate</button>
+            <button id="reset" onclick="reset()">RESET</button>
+            <div id="ans">
+
+            </div>
+            <section id="result">
+
+            </section>
+
+
+        </div>
+
+
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

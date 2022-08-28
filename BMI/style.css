@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(1, 92, 178);
+    background-color: #161f6d;
+    color: #f1b814;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('gym.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Bungee', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.sect1 {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto;
+
+}
+
+.box {
+    justify-content: center;
+    margin: 25px auto;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgb(1, 39, 64);
+    height: 470px;
+    color: #3fd2c7;
+    border: 5px solid #fb8122;
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+    box-shadow: rgba(255, 204, 65, 0.679) 0px -2px 25px, rgba(236, 189, 80, 0.651) 0px 2px 10px;
+    transition: 0.9s;
+    transform: translateY(-25px);
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(3, 78, 99);
+    background-color: black;
+    height: 13%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 3px solid #fb8122;
+    align-items: center;
+
+}
+
+.banner p {
+    font-size: 30px;
+    color: #f1b814;
+    font-family: 'Bungee', cursive;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.values {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.values input {
+    display: flex;
+    margin: 5px auto;
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(184, 241, 255);
+    border: none;
+
+}
+
+.values input::placeholder {
+    text-transform: capitalize;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus {
+    border: none;
+}
+
+button {
+    width: 110px;
+    display: flex;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px auto;
+    font-family: sans-serif;
+    padding: auto;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #fb8122;
+    outline: none;
+    border: none;
+}
+
+button:active {
+    background-color: #fb8022ca;
+
+}
+
+button:focus.box {
+    opacity: 0.6;
+
+}
+
+#ans {
+    text-align: center;
+    font-size: 35px;
+    z-index: -5;
+    color: #fff;
+    font-weight: 700;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    z-index: -5;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media (max-width : 400px) {
+    .banner p {
+        font-size: 28px;
+    }
+
+    .box {
+        width: 320px;
+
+        height: 470px;
+    }
+
+    header {
+        font-size: 40px;
+    }
+}
